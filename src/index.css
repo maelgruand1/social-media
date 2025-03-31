@@ -17,3 +17,12 @@ body {
   text-decoration: var(--underline);
   transform: scale(1.2);
 }
+/* Class for hide and see */
+.see {
+  display: block;
+}
+.seen {
+  display: none;
+}
+
+
