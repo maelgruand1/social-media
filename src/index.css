@@ -1,28 +1,88 @@
+/* variables.css (Import first) */
 @import url(variables.css);
 
+/* Existing Styles */
 .header {
   text-align: center;
 }
+
 .presentation {
   text-align: left;
 }
+
 body {
   color: var(--color);
   background: var(--background);
 }
+
 .title {
   text-align: var(--centered);
 }
+
 .title:hover {
   text-decoration: var(--underline);
   transform: scale(1.2);
 }
+
 /* Class for hide and see */
 .see {
   display: block;
 }
+
 .seen {
   display: none;
 }
 
+/* Add your new Auth styles here */
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
+.subt {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  margin-top: 10px;
+  color: var(--color);
+  opacity: 0;
+  visibility: hidden;
+  font-weight: bold;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#message.visible {
+  opacity: 1;
+  visibility: visible;
+}
