@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Present from './components/Presentation'
+import Auth from './components/Authentification';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       </header>
       <br /><br />
       <Present/>
-
+      <Auth/>
     </div>
   );
 }
